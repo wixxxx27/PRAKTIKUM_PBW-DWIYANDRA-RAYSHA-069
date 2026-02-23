@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pendaftaran Sederhana</title>
+</head>
+<body>
+    <table align="center" border="1" cellspacing="0" cellpadding="3">
+        <tr>
+            <td>
+            <form action="" method="get" enctype="multipart/form-data" onsubmit="alert('Selamat Anda telah Daftar')">
+            <table border="0" cellspacing="0" cellpadding="3">
+        <tr>
+                <td>
+                    <label for="">Nama:</label> 
+                    <input type="text" name="nama" required>
+                </td>
+        </tr>
+        <tr>
+                <td>
+                <label for="">Email:</label> 
+                <input type="email" name="email" required>
+                </td>
+        </tr>
+        <tr>
+                <td>
+                <label for="">Jenis Kelamin:</label>
+                <input type="radio" name="kelamin" value="L" required> Laki-laki
+                <input type="radio" name="kelamin" value="P" required> Perempuan
+                </td>
+        </tr>
+        <tr>
+                <td>
+                <label for="">Hobi:</label>
+                <input type="checkbox" name="hobi" value="musik"> Musik
+                <input type="checkbox" name="hobi" value="olahraga"> Olahraga
+                </td>
+        </tr>
+        <tr>
+                <td>
+                    <label for="">Pilih Kota:</label>
+                    <select name="Kota" required>
+                        <option value="1">Jakarta</option>
+                        <option value="2">Bekasi</option>
+                        <option value="3">Cikarang</option>
+                        <option value="4">Karawang</option>
+                        <option value="5">Bogor</option>
+                        <option value="6">Bandung</option>
+                        <option value="7">Lampung</option>
+                        <option value="8">Cikampek</option>
+                        <option value="9">Garut</option>
+                        <option value="10">Subang</option>
+                    </select>
+                </td>
+        </tr>
+        <tr>
+                <td>
+                    <label for="">Upload Foto:</label>
+                            <input type="file" name="foto" required>
+                </td>
+        </tr>
+        <tr>
+                <td>
+                    <button type="submit">Daftar</button>
+                </td>
+        </tr>
+                </table>
+            </form>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
