@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 800; 
+    letter-spacing: 1px; 
+}
+
+header {
+    background-color: #a01729; 
+    color: white;
+    padding: 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.logo {
+    width: 70px; 
+    height: auto;
+}
+
+header h1 {
+    font-family: 'Poppins', sans-serif; 
+    font-weight: 800; 
+    letter-spacing: 1px; 
+    font-size: 24px; 
+    margin: 0;
+}
+
+nav {
+    background-color: #db4444; 
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 80; 
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+    background-color: #f4f5f7; 
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    background-color: #b8c0c5; 
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 400; 
+}
+
+
+
+.content h2 {
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.content > p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+.form-options {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.form-options .title {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.option-row {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 40%; 
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Tombol Kirim */
+.btn-submit {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #3498db; 
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background-color: #2980b9;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #2c3e50;
+    color: white;
+    margin-top: 20px;
+    font-weight: 80; 
+}
