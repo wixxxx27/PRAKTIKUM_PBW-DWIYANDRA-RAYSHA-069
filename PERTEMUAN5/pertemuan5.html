@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HalWebUNSIKA</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">  
+</head>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>SISKA UNSIKA LITE VERSION</h1>
+        </div>
+    </header>
+    <nav></nav>
+
+    <div class="container">
+        <section class="content">
+            <h2>Data Mahasiswa</h2>
+            <p>Silakan isi Data-data ini untuk melihat nilai mu!!</p>
+
+            <!-- FIX 1: Tambah onsubmit untuk mencegah reload halaman dan panggil cekNilai() -->
+            <form action="#" onsubmit="cekNilai(); return false;">
+                <div class="form-group">
+                    <label>Nama Lengkap:</label>
+                    <input type="text" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label>NPM:</label>
+                    <!-- FIX 2: Ganti npm="NPM" menjadi name="npm" agar bisa dibaca JavaScript -->
+                    <input type="text" name="npm" required>
+                </div>
+                <div class="form-group">
+                    <label>NILAI:</label>
+                    <input type="number" id="nilai" name="nilai" placeholder="Masukkan nilai (antara 0 - 100)" min="0" max="100" required>
+                </div>
+                <button type="submit" class="btn-submit">Cek Nilai</button>
+            </form>
+
+            <div id="hasil" class="box"></div>
+
+            <aside class="sidebar">
+            <div class="tabelnilaimutu">
+                <h3>DAFTAR NILAI</h3>
+            <table>
+            <thead>
+                    <tr>
+                        <th>Rentang Nilai</th>
+                        <th>Huruf Mutu</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr><td>80 – 100</td><td><span class="nilai nilai-a">A</span></td></tr>
+                <tr><td>70 – 79</td><td><span class="nilai nilai-b">B</span></td></tr>
+                <tr><td>60 – 69</td><td><span class="nilai nilai-c">C</span></td></tr>
+                <tr><td>50 – 59</td><td><span class="nilai nilai-d">D</span></td></tr>
+                <tr><td>0 – 49</td><td><span class="nilai nilai-e">E</span></td></tr>
+            </tbody>
+            </table>
+                </div>
+            </aside>
+        </section>
+    </div>
+
+    <script>
+        function cekNilai() {
+            const nama  = document.querySelector('input[name="nama"]').value.trim();
+            const npm   = document.querySelector('input[name="npm"]').value.trim();
+            const nilai = parseFloat(document.getElementById('nilai').value);
+            const hasil = document.getElementById('hasil');
+
+            if (nama === '' || npm === '') {
+                tampilkanHasil('error', ' Nama dan NPM tidak boleh kosong!');
+                return;
+            }
+
+            if (isNaN(nilai) || nilai < 0 || nilai > 100) {
+                tampilkanHasil('error', ' Nilai tidak valid!');
+                return;
+            }
+
+            let hurufMutu;
+            if (nilai >= 80 && nilai <= 100) {
+                hurufMutu = 'A';
+            } else if (nilai >= 70 && nilai <= 79) {
+                hurufMutu = 'B';
+            } else if (nilai >= 60 && nilai <= 69) {
+                hurufMutu = 'C';
+            } else if (nilai >= 50 && nilai <= 59) {
+                hurufMutu = 'D';
+            } else {
+                hurufMutu = 'E';
+            }
+
+            const pesan = `
+                <p> <strong>Nama:</strong> ${nama}</p>
+                <p> <strong>NPM:</strong> ${npm}</p>
+                <p> <strong>Nilai:</strong> ${nilai}</p>
+                <p> <strong>Huruf Mutu:</strong>
+                    <span class="nilai nilai-${hurufMutu.toLowerCase()} huruf-besar">${hurufMutu}</span>
+                </p>
+            `;
+            tampilkanHasil('sukses', pesan);
+        }
+
+        function tampilkanHasil(tipe, isi) {
+            const hasil = document.getElementById('hasil');
+            hasil.className = 'box';
+            hasil.classList.add(tipe === 'error' ? 'hasil-error' : 'hasil-sukses');
+            hasil.innerHTML = isi;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,157 @@
+
+/* HEADER */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #bb3d3d; 
+    
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #a01729;
+    padding: 16px 32px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.header-content {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 29px;
+    font-weight: 1000;
+}
+
+nav {
+    background-color: #ffffff; 
+    padding: 2px;
+
+}
+/* FORM UTAMA */
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+    flex: 1;
+}
+
+
+.content {
+    flex: 1;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 36px 40px;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.content > p {
+    color: #666;
+    font-size: 15px;
+    margin-bottom: 40px;
+    line-height: 1;
+}
+
+
+.sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #444;
+}
+
+.form-group input {
+    padding: 11px 14px;
+    border: 1.5px solid #ddd;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #333;
+    outline: none;
+}
+.btn-submit {
+    background-color: #a01729;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 39px;
+}
+
+
+/*TABEL NILAI MUTU NYA*/
+
+.tabeltabelnilaimutu {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 24px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #db4444;
+    position: sticky;
+    top: 24px;
+    
+}
+
+.tabelnilaimutu h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 12px;
+    border-left: 4px solid #a01729;
+    padding-left: 10px;
+}
+
+table {
+    width: 125%;
+    border-collapse: collapse;
+    font-size: 14px;
+    border-radius: 8px;
+
+
+}
+
+thead tr {
+    background-color: #a01729;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 12px;
+    font-weight: 700;
+    font-size: 16px;
+}
