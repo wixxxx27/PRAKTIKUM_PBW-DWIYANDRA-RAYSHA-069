@@ -34,7 +34,7 @@ Halo! Selamat datang di repositori GitHub saya. Repositori ini berisi kumpulan t
   - **Latihan 1 (Penentuan Predikat Nilai):** Membuat form HTML untuk menginputkan Nama dan Nilai (Struktur `if-elseif-else`).
   - **Latihan 2 (Kalkulasi Diskon UKT):** Membuat fitur diskon pembayaran UKT mahasiswa berdasarkan kriteria semester dan nominal pembayaran.
 
-* ### Pertemuan 8: Percabangan, Perulangan, dan Include pada PHP
+* ### Pertemuan 8 (pertemuan 9): Percabangan, Perulangan, dan Include pada PHP
   - **Tugas:** Implementasi berbagai struktur kontrol alur PHP, tugas ini mencakup beberapa penyelesaian Logika percabangan.
 
 ---
