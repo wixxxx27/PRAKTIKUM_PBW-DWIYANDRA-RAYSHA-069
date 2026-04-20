@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koperasi Mahasiswa</title>
+    <link rel="stylesheet" href="styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+        <h1>KOPERASI MAHASISWA</h1>
+        </div>
+    </header>
+    <nav>
+    </nav>
+    <div class="container">
+        <section class="content">
+            <h2>Form Pendaftaran</h2>
+            <p>Silakan isi formulir di bawah ini.</p>
+            
+            <form action="Logic.php" method="post">
+                <div class="form-group">
+                    <label for="nama">Nama Mahasiswa:</label>
+                    <input type="text" id="nama" name="nama" required minlength="2" maxlength="50">
+                </div>
+
+                <div class="form-group">
+                    <label for="nim">NIM:</label>
+                    <input type="text" id="nim" name="nim" required minlength="10" maxlength="10">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Jenis Layanan:</label>
+                    <div>
+                        <input type="radio" id="reguler" name="layanan" value="Reguler" required>
+                        <label for="reguler">Reguler</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="prioritas" name="layanan" value="Prioritas" required>
+                        <label for="prioritas">Prioritas</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Pilihan Barang:</label>
+                    <div>
+                        <input type="checkbox" id="Sepatu Adidas ADI ZERO" name="barang[]" value="Sepatu Adidas ADI ZERO">
+                        <label for="Sepatu Adidas ADI ZERO">Sepatu Adidas ADI ZERO</label>
+                        <input type="number" name="jumlah_Sepatu_Adidas_ADI_ZERO" >
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Kamera Sony a6400" name="barang[]" value="Kamera Sony a6400">
+                        <label for="Kamera Sony a6400">Kamera Sony a6400</label>
+                        <input type="number" name="jumlah_kamera" >
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Motor Beat Karbu" name="barang[]" value="Motor Beat Karbu">
+                        <label for="Motor Beat Karbu">Motor Beat Karbu</label>
+                        <input type="number" name="jumlah_motor" >
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-submit">Kirim</button>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
