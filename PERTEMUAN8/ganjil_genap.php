@@ -10,8 +10,6 @@
 <?php
 if (isset($_POST['btn_angka'])) {
     $angka = (int)$_POST['angka'];
-    
-    // Ini yang namanya Ternary Operator (bentuk singkat if-else)
     $status = ($angka % 2 == 0) ? "Genap" : "Ganjil";
     
     echo "<div class='result-box'>Angka $angka adalah bilangan <strong>$status</strong>.</div>";
