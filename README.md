@@ -37,5 +37,8 @@ Halo! Selamat datang di repositori GitHub saya. Repositori ini berisi kumpulan t
 * ### Pertemuan 8 (pertemuan 9): Percabangan, Perulangan, dan Include pada PHP
   - **Tugas:** Implementasi berbagai struktur kontrol alur PHP, tugas ini mencakup beberapa penyelesaian Logika percabangan.
 
+* ### Pertemuan 10 : Menghubungkan Database MySql dengan PHP  [Berada di branches **MAIN*!!!*]‼️⚠️
+  - **Tugas:** Membuat Halaman website yang sudah terintegrasi dengan database mySql
+
 ---
 **wow ☕💻**
