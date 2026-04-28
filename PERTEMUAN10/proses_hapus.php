@@ -1,6 +1,6 @@
 <?php
 include 'koneksi_db.php'; // Pastikan $conn = new mysqli(...)
-
+include 'proteksi.php';
 if (isset($_GET['id']) && is_numeric($_GET['id'])) { 
     $id = $_GET['id'];
 

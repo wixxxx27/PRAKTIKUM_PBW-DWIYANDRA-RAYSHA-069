@@ -1,11 +1,9 @@
 <?php
-include 'koneksi_db.php'; // Koneksi database
+include 'koneksi_db.php'; 
 
-// Inisialisasi variabel pencarian
 $search_judul = isset($_GET['judul']) ? $_GET['judul'] : '';
 $search_tahun = isset($_GET['tahun_terbit']) ? $_GET['tahun_terbit'] : '';
 
-// Query untuk menampilkan daftar buku dengan filter pencarian
 $query = "SELECT * FROM buku WHERE 1=1";
 
 if (!empty($search_judul)) {

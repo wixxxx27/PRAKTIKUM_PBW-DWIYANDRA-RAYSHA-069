@@ -1,6 +1,6 @@
 <?php
 include 'koneksi_db.php'; // Koneksi database
-
+include 'proteksi.php';
 // Query untuk menampilkan data pesanan beserta nama pelanggan dan total harga
 $query = "
     SELECT Pesanan.ID AS Pesanan_ID, Pelanggan.Nama AS Nama_Pelanggan, 
