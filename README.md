@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🚀 Tugas Praktikum Pemrograman Web
 
 Halo! Selamat datang di repositori GitHub saya. Repositori ini berisi kumpulan tugas dan latihan praktikum dari mata kuliah Pemrograman Web. Proyek-proyek di sini dikerjakan secara bertahap mulai dari dasar HTML, CSS, JavaScript, hingga PHP.
