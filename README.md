@@ -47,7 +47,3 @@ Halo! Selamat datang di repositori GitHub saya. Repositori ini berisi kumpulan t
 ---
 **wow ☕💻**
 =======
-
----
-**wow ☕💻**
->>>>>>> 9b93511d519431b7effc522a618e711220ee4879
