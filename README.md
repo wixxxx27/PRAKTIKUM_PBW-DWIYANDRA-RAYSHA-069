@@ -48,9 +48,6 @@ Halo! Selamat datang di repositori GitHub saya. Repositori ini berisi kumpulan t
 **wow ☕💻**
 =======
 
-* ### Pertemuan 10 : Menghubungkan Database MySql dengan PHP  [Berada di branches **MAIN*!!!*]‼️⚠️
-  - **Tugas:** Membuat Halaman website yang sudah terintegrasi dengan database mySql
-
 ---
 **wow ☕💻**
 >>>>>>> 9b93511d519431b7effc522a618e711220ee4879
